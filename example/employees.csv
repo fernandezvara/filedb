@@ -1,0 +1,11 @@
+id,name,department,salary,hire_date,active
+E001,Alice Martin,Engineering,92000.00,2019-03-15,true
+E002,Bob Chen,Marketing,78000.00,2020-07-01,true
+E003,Carol White,Engineering,105000.00,2017-11-20,true
+E004,David Kim,HR,65000.00,2021-02-10,true
+E005,Eva Torres,Marketing,82000.00,2018-05-30,true
+E006,Frank Adams,Engineering,115000.00,2016-08-12,true
+E007,Grace Liu,HR,70000.00,2022-01-05,false
+E008,Hiro Tanaka,Engineering,98000.00,2020-10-18,true
+E009,Isabel Ross,Marketing,75000.00,2023-03-22,true
+E010,James Park,Engineering,88000.00,2021-06-14,false

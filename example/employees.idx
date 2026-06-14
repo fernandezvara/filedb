@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "indexes": {
+    "_pk": {
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "entries": {
+        "E001": [
+          43
+        ],
+        "E002": [
+          98
+        ],
+        "E003": [
+          147
+        ],
+        "E004": [
+          202
+        ],
+        "E005": [
+          245
+        ],
+        "E006": [
+          296
+        ],
+        "E007": [
+          351
+        ],
+        "E008": [
+          395
+        ],
+        "E009": [
+          449
+        ],
+        "E010": [
+          501
+        ]
+      }
+    },
+    "idx_department": {
+      "columns": [
+        "department"
+      ],
+      "unique": false,
+      "entries": {
+        "Engineering": [
+          43,
+          147,
+          296,
+          395,
+          501
+        ],
+        "HR": [
+          202,
+          351
+        ],
+        "Marketing": [
+          98,
+          245,
+          449
+        ]
+      }
+    },
+    "idx_name": {
+      "columns": [
+        "name"
+      ],
+      "unique": true,
+      "entries": {
+        "Alice Martin": [
+          43
+        ],
+        "Bob Chen": [
+          98
+        ],
+        "Carol White": [
+          147
+        ],
+        "David Kim": [
+          202
+        ],
+        "Eva Torres": [
+          245
+        ],
+        "Frank Adams": [
+          296
+        ],
+        "Grace Liu": [
+          351
+        ],
+        "Hiro Tanaka": [
+          395
+        ],
+        "Isabel Ross": [
+          449
+        ],
+        "James Park": [
+          501
+        ]
+      }
+    }
+  }
+}

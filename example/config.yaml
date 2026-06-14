@@ -1,0 +1,32 @@
+tables:
+  - name: employees
+    file: ./employees.csv
+    format: csv
+    columns:
+      - name: id
+        type: string
+        nullable: false
+        primary_key: true
+      - name: name
+        type: string
+        nullable: false
+      - name: department
+        type: string
+        nullable: true
+      - name: salary
+        type: float
+        nullable: true
+      - name: hire_date
+        type: date
+        nullable: true
+      - name: active
+        type: bool
+        nullable: false
+        default: true
+    indexes:
+      - name: idx_department
+        columns: [department]
+        unique: false
+      - name: idx_name
+        columns: [name]
+        unique: true
