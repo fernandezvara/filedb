@@ -10,8 +10,8 @@ import (
 
 // sidecarFile is the on-disk JSON structure for the index sidecar.
 type sidecarFile struct {
-	Version int                     `json:"version"`
-	Indexes map[string]*sidecarDef  `json:"indexes"`
+	Version int                    `json:"version"`
+	Indexes map[string]*sidecarDef `json:"indexes"`
 }
 
 // sidecarDef is the serialisable form of one index definition.

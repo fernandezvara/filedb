@@ -208,19 +208,23 @@ func (l *lexer) nextToken() error {
 		l.consume()
 		l.emit(tokEq, "=")
 	case ch == '!' && l.peekAt(1) == '=':
-		l.consume(); l.consume()
+		l.consume()
+		l.consume()
 		l.emit(tokNeq, "!=")
 	case ch == '<' && l.peekAt(1) == '>':
-		l.consume(); l.consume()
+		l.consume()
+		l.consume()
 		l.emit(tokNeq, "<>")
 	case ch == '<' && l.peekAt(1) == '=':
-		l.consume(); l.consume()
+		l.consume()
+		l.consume()
 		l.emit(tokLte, "<=")
 	case ch == '<':
 		l.consume()
 		l.emit(tokLt, "<")
 	case ch == '>' && l.peekAt(1) == '=':
-		l.consume(); l.consume()
+		l.consume()
+		l.consume()
 		l.emit(tokGte, ">=")
 	case ch == '>':
 		l.consume()
@@ -249,7 +253,7 @@ func (l *lexer) nextToken() error {
 	return nil
 }
 
-// lexString reads a single-quoted string literal, handling '' as an escaped
+// lexString reads a single-quoted string literal, handling ” as an escaped
 // single quote.
 func (l *lexer) lexString() error {
 	l.consume() // opening '

@@ -23,17 +23,17 @@ type SelectStmt struct {
 	Offset   *int64
 }
 
-func (*SelectStmt) stmtNode()         {}
+func (*SelectStmt) stmtNode()           {}
 func (s *SelectStmt) TableName() string { return s.From }
 
 // InsertStmt represents a parsed INSERT INTO statement.
 type InsertStmt struct {
 	Table   string
-	Columns []string    // explicit column list; empty means schema order
-	Values  [][]Expr    // one inner slice per row; multi-row inserts supported
+	Columns []string // explicit column list; empty means schema order
+	Values  [][]Expr // one inner slice per row; multi-row inserts supported
 }
 
-func (*InsertStmt) stmtNode()          {}
+func (*InsertStmt) stmtNode()           {}
 func (s *InsertStmt) TableName() string { return s.Table }
 
 // UpdateStmt represents a parsed UPDATE statement.
@@ -43,7 +43,7 @@ type UpdateStmt struct {
 	Where Expr
 }
 
-func (*UpdateStmt) stmtNode()          {}
+func (*UpdateStmt) stmtNode()           {}
 func (s *UpdateStmt) TableName() string { return s.Table }
 
 // DeleteStmt represents a parsed DELETE FROM statement.
@@ -52,7 +52,7 @@ type DeleteStmt struct {
 	Where Expr
 }
 
-func (*DeleteStmt) stmtNode()          {}
+func (*DeleteStmt) stmtNode()           {}
 func (s *DeleteStmt) TableName() string { return s.Table }
 
 // SetClause is a single col = expr assignment inside an UPDATE SET list.
